@@ -1,0 +1,10 @@
+<!-- <p>picsum works!</p>
+<div *ngIf="imgSrc">
+  <img [src]="imgSrc" alt="some pic">
+</div> -->
+
+
+<p>picsum works!</p>
+<div *ngIf="id$ | async as id">
+  <img [src]="'https://i.picsum.photos/id/' + id + '/200/300.jpg'" alt="some pic">
+</div>

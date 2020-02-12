@@ -1,0 +1,28 @@
+<h1>Events Vs Observable Streams</h1>
+
+<h4>Event Input</h4>
+<input type="text" (keyup)="handleKeyDown($event)" [(ngModel)]="searchTerm" placeholder="Search Term"/>
+
+<h3>List</h3>
+<ul>
+  <li *ngFor="let customer of customers">{{ customer.firstName | titlecase}} {{ customer.lastName | titlecase }}</li>
+</ul>
+
+<hr>
+
+<h4>Observable Input</h4>
+<input type="text" #customer autocomplete="off">
+
+<ul>
+  <li *ngFor="let customer of customers$ | async">{{ customer.firstName | titlecase}} {{ customer.lastName | titlecase }}</li>
+</ul>
+
+<hr>
+
+<h4>Reactive Forms Iput</h4>
+<input type="text" [formControl]="query">
+
+<ul>
+  <li *ngFor="let customer of reactiveFormsCustomers$ | async">{{ customer.firstName | titlecase}} {{ customer.lastName | titlecase }}</li>
+</ul>
+

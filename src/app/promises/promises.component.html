@@ -1,0 +1,19 @@
+<h1>As Promised</h1>
+<ul>
+  <li *ngFor="let customer of promisedCustomers">{{ customer.firstName | titlecase}} {{ customer.lastName | titlecase }}</li>
+</ul>
+
+<hr>
+
+<h1>As Observed</h1>
+<ul>
+  <li *ngFor="let customer of customers$ | async">{{ customer.firstName | titlecase}} {{ customer.lastName | titlecase }}</li>
+</ul>
+
+<!-- <hr> -->
+
+<!-- antipattern -->
+<h1>As Observed And Assigned</h1>
+<ul>
+  <li *ngFor="let customer of customers">{{ customer.firstName | titlecase}} {{ customer.lastName | titlecase }}</li>
+</ul>

@@ -1,0 +1,13 @@
+<h1>Side Effects</h1>
+
+<mat-form-field>
+  <mat-label>Products</mat-label>
+  <mat-select [formControl]="productSelect" [compareWith]="compareProductObjects">
+    <mat-option
+      *ngFor="let product of products$ | async"
+      [value]="product"
+    >
+      {{ product.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

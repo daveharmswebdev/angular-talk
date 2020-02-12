@@ -1,0 +1,87 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "lastName": "smith",
+      "firstName": "adam",
+      "city": "Nashville",
+      "state": "TN",
+      "country": "United States",
+      "active": false
+    },
+    {
+      "id": 2,
+      "lastName": "Fuller",
+      "firstName": "George",
+      "city": "Chattanooga",
+      "state": "TN",
+      "country": "United States",
+      "active": true
+    },
+    {
+      "id": 3,
+      "lastName": "Presley",
+      "firstName": "Elvis",
+      "city": "Memphis",
+      "state": "TN",
+      "country": "United States",
+      "active": false
+    },
+    {
+      "id": 4,
+      "lastName": "Aurbach",
+      "firstName": "Daniel",
+      "city": "New York",
+      "state": "NY",
+      "country": "United States",
+      "active": true
+    },
+    {
+      "id": 5,
+      "lastName": "White",
+      "firstName": "John",
+      "city": "Detroit",
+      "state": "MI",
+      "country": "United States",
+      "active": true
+    }
+  ],
+  "products": [
+    {
+      "id":1,
+      "name": "Garden Hose",
+      "serialCode": "6d223011-18e5-4d31-8b73-217678c0647d",
+      "category": "x"
+    },
+    {
+      "id":2,
+      "name": "Ladder",
+      "serialCode": "c8c7aa43-09c1-45ba-a1d2-f837ba75cfc1",
+      "category": "x"
+    },
+    {
+      "id":3,
+      "name": "Kitchen Knife",
+      "serialCode": "e355a410-09ca-4076-917c-c3a882d67f59",
+      "category": "y"
+    },
+    {
+      "id":4,
+      "name": "Can Opener",
+      "serialCode": "ec9192d6-ed21-45b8-8606-493ae71cbbe0",
+      "category": "y"
+    },
+    {
+      "id":5,
+      "name": "Dish Washer",
+      "serialCode": "b4cd8d09-ce5d-4c09-811f-cb5f975e309e",
+      "category": "z"
+    },
+    {
+      "id":6,
+      "name": "Television",
+      "serialCode": "df2f6c82-be47-4898-9320-8a335e138e19",
+      "category": "z"
+    }
+  ]
+}
